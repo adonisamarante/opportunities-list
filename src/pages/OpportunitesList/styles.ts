@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
   height: 100vh;
 `;
 
-export const StyledHeader = styled.header`
+export const StyledHeader = styled.div`
   margin-top: 70px;
   margin-bottom: 70px;
   display: flex;
@@ -29,21 +29,21 @@ export const StyledDash = styled.div`
   border-radius: 0 15px 15px 0;
 `;
 
-export const StyledBody = styled.body`
-  padding: 50px;
+export const StyledBody = styled.div`
+  padding: 20px 150px 50px 150px;
   height: auto;
 `;
 
 export const StyledWrapper = styled.div`
-  @media (max-width: 60em) {
+  @media (max-width: 40em) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @media (min-width: 60em) {
+  @media (min-width: 40em) {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: 28%;
+    column-gap: 100px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
   }
