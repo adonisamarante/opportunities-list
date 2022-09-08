@@ -1,4 +1,4 @@
-export const OpportunityListMock = [
+const OpportunityListMock = [
   {
     id: 1,
     picture: 'fsdfs',
@@ -56,3 +56,5 @@ export const OpportunityListMock = [
     location: 'Morretes, Itapema - SC'
   },
 ]
+
+export default OpportunityListMock;

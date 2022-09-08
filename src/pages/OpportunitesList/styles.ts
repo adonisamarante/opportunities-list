@@ -16,6 +16,7 @@ export const StyledHeader = styled.header`
 export const StyledTitleSpan = styled.span`
   color: #FFFFFF;
   font: bold 40px 'Roboto', sans-serif;
+  padding-right: 30px;
 `;
 
 export const StyledDash = styled.div`
@@ -26,4 +27,36 @@ export const StyledDash = styled.div`
   height: 0px;
   margin: 22px 45px 0 0;
   border-radius: 0 15px 15px 0;
+`;
+
+export const StyledBody = styled.body`
+  padding: 50px;
+  height: auto;
+`;
+
+export const StyledWrapper = styled.div`
+  @media (max-width: 60em) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 60em) {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  ::-webkit-scrollbar{
+    height: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track{
+    background: #3F3F3F;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background: #4F4F4F;
+  }
 `;
